@@ -1,0 +1,667 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul,ol{list-style-type: none;}
+
+/*===== nav section css start =====*/
+.background{
+    background: #95e1d3;
+    height: 70px;
+    animation: sticky .10s;
+}
+@keyframes sticky{
+    from{top: -50px;}
+    to{top: 0;}
+}
+.back_top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999;
+/*    display: none;*/
+}
+.back_top i{
+    background: #95e1d3;
+    font-size: 24px;
+    font-weight: 700;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    border: 2px solid #a2c3c2;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+.navbar .navbar-nav .nav-item{
+    padding: 0px 17px;
+}
+.navbar .navbar-nav .nav-link{
+	font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 80px;
+    transition: all linear .3s;
+    position: relative;
+}
+.navbar .navbar-nav .nav-link:hover {
+	color: #fce38a;
+}
+.navbar .navbar-nav .nav-link:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    bottom: 30px;
+    left: 0;
+    background: #fce38a;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.navbar .navbar-nav .nav-link {
+	 padding-right: 0; 
+	 padding-left: 0; 
+}
+.navbar .navbar-nav .nav-link:hover:after{
+    opacity: 1;
+}
+/*===== nav section css end =====*/
+
+/*===== baner section css start =====*/
+#baner{
+    background: url('../images/baner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 228px;
+    padding-bottom: 241px;
+    position: relative;
+}
+#baner:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+}
+.baner_text{
+   position: relative;
+   z-index: 999;
+}
+.baner_text h3{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 72px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.baner_text h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+    position: relative;
+    padding-bottom: 100px;
+}
+.baner_text h1:after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff; 
+    
+}
+.baner_text a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border: 3px solid #fff; 
+    transition: all linear .30s;
+}
+.baner_text a:hover{
+    background: #fff;
+    color: #666;
+}
+/*===== baner section css end =====*/
+
+/*===== modal section css start =====*/
+.modal {
+	z-index: 99999;
+}
+.modal-dialog {
+	max-width: 700px;
+}
+/*===== modal section css end =====*/
+
+/*===== about section css start =====*/
+#about{
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.heading h3{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #333333;
+    line-height: .5;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+.heading h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+    padding-bottom: 50px;
+    position: relative;
+    text-transform: uppercase;
+}
+.heading h2:after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    left: 50%;
+    top: 62px;
+    transform: translateX(-50%);
+}
+.heading p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 24px;
+}
+.baner_item{
+   position: relative;
+    
+}
+.overlay{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: all linear .3s;
+}
+.content i{
+    font-size: 24px;
+    color: #ffffff;
+}
+.content p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.baner_item:hover .overlay{
+    height: 100%;
+    opacity: 0.9;
+}
+/*===== about section css end =====*/
+
+/*===== counter section css start =====*/
+#counter{
+    background: #95e1d3;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.counter_item h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.counter_item p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+/*===== counter section css end =====*/
+
+/*===== collaps section css start =====*/
+#collaps{
+    padding-top: 60px;
+}
+.card-header .btn-link {
+	color: #fff;
+	background-color: #2222e3;
+}
+.card-header {
+	padding: 0; 
+	margin-bottom: 0;
+	border-bottom: 0; 
+}
+.btn-link {
+	font-size: 20px;
+	text-transform: capitalize;
+}
+.btn.btn-link{
+    background: #032741;
+}
+.btn.btn-link.collapsed{
+    background: #0c0c4e;
+}
+.btn.btn-link i{
+    transform: rotate(90deg);
+}
+.btn.btn-link.collapsed i{
+    transform: rotate(0deg);
+}
+.btn-link:hover {
+	text-decoration: none;
+}
+.btn-link.focus, .btn-link:focus {
+	text-decoration: none;
+}
+/*===== collaps section css end =====*/
+
+/*===== service colapssection css start =====*/
+#service{
+    padding-top: 110px;
+}
+.service_item{
+    padding-bottom: 56px;
+}
+.service_item img{
+    width: 32px;
+    height: 32px;
+}
+.service_item h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    text-transform: uppercase;
+}
+.service_item p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 24px;
+}
+/*===== service section css end =====*/
+
+/*===== feedback slider section css start =====*/
+
+#feedback{
+    margin-bottom: 100px;
+    background: #f8f8f8;
+    padding-top: 46px;
+    padding-bottom: 46px;
+}
+.icon_main{
+    position: relative;
+}
+.icon_main .lft{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.icon_main .rgt{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.feedback_icon i{
+    padding: 35px;
+    border: 3px solid #95e1d3;
+    color: #95e1d3;
+    font-size: 62px;
+    
+}
+.feedback_comment p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #999999;
+    line-height: 36px;
+    font-style: italic;
+}
+.feedback_comment h3{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #333333;
+    text-transform: capitalize;
+    padding-left: 70px;
+    position: relative;
+}
+.feedback_comment h3:after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*===== feedback slider section css end =====*/
+
+/*===== team section css start =====*/
+.team_item{
+    padding-top: 50px;
+    text-align: center;
+    position: relative;
+}
+.team_img{
+    position: relative;
+}
+.team_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    opacity: 0;
+}
+.team_item:hover .team_overlay{
+    opacity: 0.9;
+}
+.team_info h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    text-transform: uppercase;
+    padding-top: 28px;
+}
+.team_info p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    color: #999;
+    text-transform: capitalize;
+}
+.team_icon i{
+    width: 57px;
+    height: 57px;
+    line-height: 57px;
+    background: #fce38a;
+    font-size: 27px;
+    color: #f38181;
+}
+.team_icon i:hover{
+    background: #f38181;
+    color: #ffffff;
+}
+/*===== team section css end =====*/
+
+/*===== galery section css start =====*/
+#work{
+    padding-top: 45px;
+    padding-bottom: 80px;
+}
+.work_head{
+    padding-bottom: 62px;
+}
+.work_img{
+    position: relative;
+}
+.work_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+}
+.work_img:hover .work_overlay{
+    opacity: 0.9;
+}
+.work_info i{
+    font-size: 30px;
+    color: #ffffff;
+    padding-bottom: 17px;
+}
+.work_info h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.work_info p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+/*===== galery section css end =====*/
+
+/*===== footer_part section css start =====*/
+#footer_part{
+    background: #f8f8f8;
+    padding-top: 50px;
+}
+.footer_logo p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    padding-top: 17px;
+    padding-bottom: 15px;
+}
+.footer_logo h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+    text-transform: capitalize;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 18px;
+}
+.footer_logo h4 span{
+    font-weight: 700;
+    font-size: 18px;
+}
+.footer_logo h5{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    color: #999999;
+    padding-top: 6px;
+    padding-bottom: 25px;
+}
+.footer_logo h5 i{
+    font-size: 17px;
+    color: #95e1d3;
+    padding-left: 14px;
+}
+.sub{
+    position: relative;
+}
+.subscraib_main .form-control{
+    height: 32px;
+    border: 1px solid #e7e7e7;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    color: #cccccc;
+    text-transform: capitalize;
+}
+.subscraib_main .btn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: #95e1d3;
+    padding: 5px 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+.blog_main h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+}
+.blog_item{
+    padding-top: 23px;
+}
+.blog_info p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333333;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+.blog_info h6{
+    font-size: 13px;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: -7px;
+}
+.blog_bt{
+    padding-bottom: 20px;
+}
+.inst h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+    padding-bottom: 15px;
+}
+.inst_img{
+    padding: 1px;
+}
+.view_more a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 13px;
+    color: #333333;
+    padding-top: 15px;
+    cursor:pointer;
+}
+.view_more{
+    padding-bottom: 48px;
+}
+.footer_sec{
+    border-top: 1px solid #e5e5e5;
+}
+.footer_sec p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    line-height: 60px;
+}
+.footer_sec p span{
+    color: #f38181;
+}
+/*===== footer_part section css end =====*/
+
+/*===== preloder css start =====*/
+.preloder{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 99999999999999999;
+/*    display: none;*/
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.loader {
+	border: 16px solid #d7f0e0;
+	border-radius: 50%;
+	border-top: 16px solid #a8e1d2;
+	width: 100px;
+	height: 100px;
+	animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.preloder_work{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+
+/*===== preloder css end =====*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
